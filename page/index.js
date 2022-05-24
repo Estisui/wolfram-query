@@ -10,5 +10,5 @@ console.log(result);
 
 function displayResult() {
    /* Copy the text inside the text field */
-  result.src = "https://www.wolframcloud.com/obj/911d6841-9908-4d99-ac29-a339db03b994?_embed=iframe" + `&text="${input.value}"`;
+  result.src = "https://www.wolframcloud.com/obj/320732ec-9ab8-4e6a-aa18-a299b9c53f3e?_embed=iframe" + `&text="${input.value}"`;
 }
