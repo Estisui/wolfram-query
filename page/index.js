@@ -12,7 +12,4 @@ function handleInput(e) {
 function clipboardCopy() {
    /* Copy the text inside the text field */
   navigator.clipboard.writeText(output.textContent);
-
-  /* Alert the copied text */
-  alert("Copied the text: " + output.textContent);
 }
