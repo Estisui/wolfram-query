@@ -1,15 +1,14 @@
 let input = document.querySelector('input');
-let output = document.getElementById('output');
-console.log(input);
-console.log(output);
+let result = document.getElementById('result');
+// let output = document.getElementById('output');
+console.log(result);
+// input.oninput = handleInput;
 
-input.oninput = handleInput;
+// function handleInput(e) {
+//   output.textContent = `TextStructure["${e.target.value}", "DependencyGraphs"]`;
+// }
 
-function handleInput(e) {
-  output.textContent = `TextStructure["${e.target.value}", "DependencyGraphs"]`;
-}
-
-function clipboardCopy() {
+function displayResult() {
    /* Copy the text inside the text field */
-  navigator.clipboard.writeText(output.textContent);
+  result.src = "https://www.wolframcloud.com/obj/911d6841-9908-4d99-ac29-a339db03b994?_embed=iframe" + `&text="${input.value}"`;
 }
